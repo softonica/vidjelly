@@ -1,4 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+:root {
+    --primary-color: 11, 22, 34;
+    --secondary-color: 42, 54, 74;
+    --tertiary-color: 22, 25, 36;
+    --accent-color: 59, 130, 246;
+    --accent-2-color: 37, 99, 235;
+    --accent-3-color: 29, 78, 216;
+    --accent-4-color: 30, 64, 175;
+    --primary-darker-color: 21, 30, 48;
+    --primary-darkest-color: 33, 45, 61;
+    --overlay-color: 16, 33, 50;
+    --text-color: 255, 255, 255;
+    --text-accent-color: 244, 244, 245;
+    --text-accent-2-color: 255, 255, 255;
+    --error-color: 179, 0, 0;
+    --error-accent-color: 225, 29, 72;
+    --error-accent-2-color: 190, 18, 60;
+    --error-accent-3-color: 251, 113, 133;
+	--border-gray: 58,58,58;
+}
 
 #txtCustomCss, #txtLocalCustomCss {
 	height: 400px !important;
@@ -1719,14 +1739,14 @@ progress::-webkit-progress-value {
 .toast,
 .raised.homeLibraryButton:hover {
 	box-shadow: 0px 0px 5px #fff9;
-	border: solid 1px #fff;
+	border: solid 1px #3a3a3a;
 }
 .cardOverlayContainer {
-	border: solid 1px #fff !important;
+	border: solid 1px rgb var(---border-gray) !important;
 }
 .drawer-open {
 	box-shadow: 0px 0px 5px #fff !important;
-	border-right: solid 1px #fff !important;
+	border-right: solid 1px rgb var(---border-gray) !important;
 }
 
 @supports (backdrop-filter: blur(15px)) {
@@ -3529,6 +3549,11 @@ a[href*="shokoanime.com"] {
 	color: #fff;
 }*/
 
+.dialogContainer {
+	backdrop-filter: blur(3px);
+	background: rgb(26 26 26 / 80%);
+}
+
 .subtitleResults .listItem:hover .listItemBody {
 	color: #fff !important;
 }
@@ -4018,7 +4043,7 @@ a[href*="shokoanime.com"] {
 }*/
 
 .layout-tv #itemDetailPage .emby-button.show-focus:focus {
-  border: solid 1px #fff;
+  border: solid 1px rgb var(---border-gray);
   background: transparent !important;
   color:#00a4dc !important;
   width:auto;
@@ -4037,7 +4062,7 @@ a[href*="shokoanime.com"] {
 .layout-tv .card.show-focus:focus .cardImageContainer,
 .layout-tv .listItem-focusscale:focus {
 	box-shadow: 0px 0px 5px #fff9;
-	border: solid 1px #fff !important;
+	border: solid 1px rgb var(---border-gray) !important;
 }
 
 .layout-tv .detailPageWrapperContainer {
